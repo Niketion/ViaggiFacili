@@ -23,8 +23,7 @@
 						class="icon-bar"></span> <span class="icon-bar"></span> <span
 						class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#" th:href="@{/}">Registration and
-					Login Module</a>
+				<a class="navbar-brand" href="#" th:href="@{/}">Modulo di autenticazione</a>
 			</div>
 		</div>
 	</nav>
@@ -40,25 +39,24 @@
 					
 					<!-- error message -->
 					<div th:if="${param.error}">
-						<div class="alert alert-danger">Invalid username or
-							password.</div>
+						<div class="alert alert-danger">Email o password invalide</div>
 					</div>
 				
 					<!-- logout message -->
 					<div th:if="${param.logout}">
-						<div class="alert alert-info">You have been logged out.</div>
+						<div class="alert alert-info">Logout eseguito correttamente</div>
 					</div>
 					
 					<div class = "form-group">
-						<label for ="username"> Username </label> :
+						<label for ="username"> Email </label> :
 						<input type="text" class = "form-control" id ="username" name = "username"
-						placeholder="Enter Email ID" autofocus="autofocus">
+						placeholder="Email" autofocus="autofocus">
 					</div>
 					
 					<div class="form-group">
 						<label for="password">Password</label>: <input type="password"
 							id="password" name="password" class="form-control"
-							placeholder="Enter Password" />
+							placeholder="Password" />
 					</div>
 					
 					<div class="form-group">
@@ -71,8 +69,7 @@
 					</div>
 				</form>
 				<div class="form-group">
-						<span>New user? <a href="/" th:href="@{/registration}">Register
-								here</a></span>
+						<span>Sei un nuovo utente? <a href="/" th:href="@{/registration}">Registrati qui</a>!</span>
 				</div>
 			</div>
 		</div>
