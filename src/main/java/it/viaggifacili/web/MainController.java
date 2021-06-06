@@ -23,8 +23,6 @@ public class MainController {
 
 	@GetMapping("/")
 	public String home() {
-		User user = userRepository.findByEmail("tuopadre");
-		System.out.println("Email: " + user.getEmail());
 		return "index";
 	}
 
